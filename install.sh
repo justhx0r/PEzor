@@ -7,7 +7,7 @@ cd $INSTALL_DIR &&
 
 sudo apt update &&
 sudo apt install -y python3-pip wget unzip build-essential cmake autotools-dev git clang golang mingw-w64 libcapstone-dev libssl-dev cowsay mono-devel wine64-tools &&
-pip3 install --no-warn-script-location xortool &&
+pip3 install --break-system-packages --no-warn-script-location xortool &&
 
 mkdir -p deps &&
 cd deps &&
